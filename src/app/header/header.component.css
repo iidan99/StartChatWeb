@@ -1,0 +1,13 @@
+.container{
+  background-image: url(../../assets/Header_Main_IMG.png);
+  background-repeat: no-repeat;
+  height: 612px;
+}
+
+.container_logo{
+  display: flex;
+}
+
+.container_logo_Img{
+  margin: 50px 250px;
+}
