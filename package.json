@@ -2,6 +2,7 @@
   "name": "start-chat-web",
   "version": "0.0.0",
   "scripts": {
+    "buildup": "ng build --aot --prod --base-href /StartChatWeb/ --outputPath ./dist/ &&  gh-pages -d ./dist",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
