@@ -5,10 +5,10 @@
  display: flex;
  justify-content: center;
 }
-
 .container_areacode{
   height: 40px;
   width: 100px;
+  margin-right: 24px;
   text-align: right;
 }
 
@@ -16,10 +16,14 @@
   outline: none;
   border-radius: 50px;
   height: 27px;
-  margin-left: 10px;
   padding: 15px;
+  font-size: 18px;
 }
 
+.container_phonenumber{
+  width: 400px;
+  margin-right: 24px;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -30,11 +34,13 @@ input::-webkit-inner-spin-button {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 11px;
-  left: 55px;
+  top: 18px;
+  left: 35px;
   border-radius: 100px;
   border-style: solid;
   border-color: #e7e7e7;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 .search_areacode{
   position: relative;
@@ -47,14 +53,22 @@ input::-webkit-inner-spin-button {
 }
 
 .container_search_btn{
-  width: 500px;
+  width: 400px;
   border-radius: 50px;
   background-color: #00a404;
   border: none;
-  font-size: 22pt;
+  font-size: 18pt;
   color: #ffffff;
   height: 60px;
   padding-bottom: 5px;
   outline: none;
 
+}
+
+.country{
+  width: 300px;
+  position: absolute;
+  height: 400px;
+  overflow: scroll;
+  right: 40px;
 }

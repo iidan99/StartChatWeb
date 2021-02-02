@@ -1,7 +1,7 @@
 .container{
   background-image: url(../../assets/images/Header_Main_IMG.png);
   background-repeat: no-repeat;
-  height: 612px;
+  width: 100%;
   display: flex;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .container_header_phone_img{
-  width: 1005px;
+  width: 900px;
   margin-left: -200px;
 }
 
