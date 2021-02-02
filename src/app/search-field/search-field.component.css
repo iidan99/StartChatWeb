@@ -2,6 +2,12 @@
  display: flex;
  justify-content: center;
 }
+.container{
+  background-image: url("../../assets/images/OUTLINE-ORNAMENT.png");
+  min-height: 842px;
+  background-position: center;
+}
+
 .container_areacode{
   height: 40px;
   width: 100px;
@@ -12,9 +18,10 @@
 .searchfields{
   outline: none;
   border-radius: 50px;
-  height: 27px;
+  height: 20px;
   padding: 15px;
   font-size: 18px;
+  border: 2px solid #808080;
 }
 
 .container_phonenumber{
@@ -31,7 +38,7 @@ input::-webkit-inner-spin-button {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 18px;
+  top: 15px;
   left: 35px;
   border-radius: 100px;
   border-style: solid;
@@ -41,12 +48,15 @@ input::-webkit-inner-spin-button {
 }
 .search_areacode{
   position: relative;
+  width: 135px;
+  margin: 0 30px 0 0;
 }
 
 .container_heder_text{
   display: flex;
   justify-content: center;
-  font-size: 25px
+  font-size: 30px;
+  margin: 50px 0 50px 0;
 }
 
 .container_search_btn{
@@ -56,7 +66,7 @@ input::-webkit-inner-spin-button {
   border: none;
   font-size: 18pt;
   color: #ffffff;
-  height: 60px;
+  height: 53px;
   padding-bottom: 5px;
   outline: none;
 }
@@ -67,4 +77,23 @@ input::-webkit-inner-spin-button {
   height: 250px;
   overflow: scroll;
   right: 40px;
+}
+
+.dropdown_icon_img{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.container_heder_text_first{
+  color:#00a404;
+  margin-right:8px;
 }

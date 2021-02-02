@@ -1,13 +1,14 @@
 <div class="container">
   <div class="container_heder_text">
-    <p>Add the requested phone number</p>
+    <p class="container_heder_text_first">Add the requested phone number</p>
     <p>to start a WhatsApp conversation</p>
   </div>
   <div class="container_search">
       <div class="search_areacode">
         <div class="" (click)="openPopup()">
-          <i class="flag_icon"><img class="flag_icon_img" [src]="countryFlag" alt=""></i>
-          <input class="container_areacode searchfields" maxlength="5" [placeholder]="areacode" type="number">
+          <i class="flag_icon pointer"><img class="dropdown_icon_img" src="assets/images/dropdown.png" alt=""></i>
+          <i class="flag_icon pointer"><img class="flag_icon_img" [src]="countryFlag" alt=""></i>
+          <input class="container_areacode searchfields pointer" maxlength="5" [placeholder]="areacode" type="number">
         </div>
       <div class="country"  *ngIf="areaCodePopup">
         <app-search-field-country (onSelectAreaCode)="onChangeAreaCode($event)"></app-search-field-country>
