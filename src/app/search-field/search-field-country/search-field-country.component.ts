@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { country } from "../../interface/country_interface";
 
@@ -10,6 +10,7 @@ import { country } from "../../interface/country_interface";
 export class SearchFieldCountryComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
+  @Output() onSelectAreaCode = new EventEmitter<country>();
   countryList: country;
   ngOnInit(): void {
     console.log(this.getCountryList());
@@ -20,6 +21,6 @@ export class SearchFieldCountryComponent implements OnInit {
       this.countryList = result);
   }
   onSelect(item: country){
-    console.log(item);
+    this.onSelectAreaCode.emit(item);
   }
 }

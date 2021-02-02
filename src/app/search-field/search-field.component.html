@@ -5,10 +5,12 @@
   </div>
   <div class="container_search">
       <div class="search_areacode">
-      <i class="flag_icon"><img class="flag_icon_img" src="assets/images/isr.svg" alt=""></i>
-      <input class="container_areacode searchfields" maxlength="5" placeholder="+972" type="number">
-      <div class="country">
-        <app-search-field-country></app-search-field-country>
+        <div class="" (click)="openPopup()">
+          <i class="flag_icon"><img class="flag_icon_img" [src]="countryFlag" alt=""></i>
+          <input class="container_areacode searchfields" maxlength="5" [placeholder]="areacode" type="number">
+        </div>
+      <div class="country"  *ngIf="areaCodePopup">
+        <app-search-field-country (onSelectAreaCode)="onChangeAreaCode($event)"></app-search-field-country>
       </div>
       </div>
       <input class="container_phonenumber searchfields" placeholder="phone number" type="number">
