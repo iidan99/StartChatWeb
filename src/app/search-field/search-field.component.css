@@ -6,6 +6,7 @@
   background-image: url("../../assets/images/OUTLINE-ORNAMENT.png");
   min-height: 842px;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container_areacode{

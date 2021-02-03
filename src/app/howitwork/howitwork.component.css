@@ -1,0 +1,43 @@
+.container{
+  display: flex;
+  align-items: center;
+  margin-top: -550px;
+  flex-direction: column;
+  background-image: url(../../assets/images/howitworkback.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-y: 250px;
+}
+
+.container_header_text{
+  font-weight: 400;
+  color:#00a404;
+  font-size: 45px;
+}
+
+.container_phones{
+  margin-top: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 100px;
+}
+
+.number3{
+  margin: 0 0 337px 0;
+}
+
+.container_help{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.workheader{
+  text-align: center;
+    margin-left: 86px;
+    font-size: 53px;
+    font-weight: 700;
+    color: #ffff;
+    margin-top: 25px;
+}

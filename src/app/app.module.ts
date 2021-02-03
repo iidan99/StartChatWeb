@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchFieldComponent } from './search-field/search-field.component';
 import { SearchFieldCountryComponent } from './search-field/search-field-country/search-field-country.component';
+import { HowitworkComponent } from './howitwork/howitwork.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { SearchFieldCountryComponent } from './search-field/search-field-country
     HeaderComponent,
     SearchFieldComponent,
     SearchFieldCountryComponent,
+    HowitworkComponent,
   ],
   imports: [
     BrowserModule,
