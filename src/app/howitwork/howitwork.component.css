@@ -1,10 +1,12 @@
 .container{
+  justify-content: center;
   display: flex;
   align-items: center;
   margin-top: -550px;
   flex-direction: column;
   background-image: url(../../assets/images/howitworkback.png);
   background-position: right;
+  width: 1920px;
   background-repeat: no-repeat;
   background-position-y: 250px;
 }
@@ -19,8 +21,8 @@
   margin-top: 65px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  margin-right: 100px;
+  margin-right: 160px;
+  justify-content: center;
 }
 
 .number3{
@@ -34,10 +36,96 @@
 }
 
 .workheader{
-  text-align: center;
-    margin-left: 86px;
     font-size: 53px;
     font-weight: 700;
     color: #ffff;
     margin-top: 25px;
+}
+
+.sectext{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.container_phone_text{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-right: 32px;
+  height: 332px;
+}
+
+.paste{
+  width: 621px;
+}
+
+.start{
+  width: 500px;
+}
+
+.copy{
+  width: 500px;
+}
+
+.subtext{
+  font-size: 31px;
+  color: #ffff;
+}
+
+.icons{
+  margin-top: -120px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.phone_1{
+  margin-left: 200px;
+}
+
+.phone_2{
+  margin-left: 210px;
+}
+
+.phone_3{
+  margin-left: 199px;
+}
+
+.copytext{
+  margin-right: 29px;
+}
+
+.icon_img{
+  flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 276px;
+    text-align: center;
+    font-weight: 500;
+
+}
+.dots{
+  margin-left: 137px;
+}
+
+.space{
+  margin-top: 25px;
+}
+
+.space2{
+  margin-top: 30px;
+}
+.group_text{
+  margin-top: 30px;
+}
+.space3{
+  margin-top: 45px;
+}
+
+.phonenumber{
+  color: #00a404;
+  font-size: 28px;
+  font-weight: 700;
 }
