@@ -5,12 +5,11 @@
   margin-top: -550px;
   flex-direction: column;
   background-image: url(../../assets/images/howitworkback.png);
-  background-position: right;
-  width: 1920px;
+  background-position: center;
+  width: 100%;
   background-repeat: no-repeat;
   background-position-y: 250px;
 }
-
 .container_header_text{
   font-weight: 400;
   color:#00a404;
@@ -77,7 +76,7 @@
 .icons{
   margin-top: -120px;
   display: flex;
-  width: 100%;
+  width: 1900px;
   justify-content: space-evenly;
 }
 

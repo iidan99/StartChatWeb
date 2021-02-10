@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { SearchFieldComponent } from './search-field/search-field.component';
 import { SearchFieldCountryComponent } from './search-field/search-field-country/search-field-country.component';
 import { HowitworkComponent } from './howitwork/howitwork.component';
+import { VideoComponent } from './video/video.component';
+import { BottomDownloadComponent } from './bottom-download/bottom-download.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { HowitworkComponent } from './howitwork/howitwork.component';
     SearchFieldComponent,
     SearchFieldCountryComponent,
     HowitworkComponent,
+    VideoComponent,
+    BottomDownloadComponent,
   ],
   imports: [
     BrowserModule,

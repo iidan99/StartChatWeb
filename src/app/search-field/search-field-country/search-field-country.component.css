@@ -6,7 +6,7 @@
   align-items: center;
 }
 .container:hover{
-  background-color: blue;
+  background-color: #e3e3e3;
   cursor: pointer;
 }
 
