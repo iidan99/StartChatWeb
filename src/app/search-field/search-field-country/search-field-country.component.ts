@@ -11,16 +11,19 @@ export class SearchFieldCountryComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
   @Output() onSelectAreaCode = new EventEmitter<country>();
-  countryList: country;
+  countryList: country[];
+  arr: country[];
   ngOnInit(): void {
-    console.log(this.getCountryList());
+  this.getCountryList();
   }
 
   getCountryList(){
-    return this.http.get<country>("assets/country.json").subscribe(result =>
+    return this.http.get<country[]>("assets/country.json").subscribe(result =>
       this.countryList = result);
   }
   onSelect(item: country){
+    this.countryList = this.countryList.sort((a,b) => a.dial_code.localeCompare(b.dial_code));
+    console.log(this.countryList);
     this.onSelectAreaCode.emit(item);
   }
 }
