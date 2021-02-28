@@ -8,6 +8,7 @@ import { SearchFieldCountryComponent } from './search-field/search-field-country
 import { HowitworkComponent } from './howitwork/howitwork.component';
 import { VideoComponent } from './video/video.component';
 import { BottomDownloadComponent } from './bottom-download/bottom-download.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BottomDownloadComponent } from './bottom-download/bottom-download.compo
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

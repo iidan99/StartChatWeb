@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { country } from '../interface/country_interface';
+import { StartchatService } from '../startchat.service';
 
 @Component({
   selector: 'app-search-field',
@@ -10,7 +11,8 @@ export class SearchFieldComponent implements OnInit {
   areaCodePopup: boolean = false;
   areacode: string = "+972";
   countryFlag: String = "https://restcountries.eu/data/isr.svg";
-  constructor() { }
+  binding:number;
+  constructor(private chat: StartchatService) { }
 
   ngOnInit(): void {
   }
@@ -22,5 +24,8 @@ export class SearchFieldComponent implements OnInit {
     this.areacode = item.dial_code;
     this.countryFlag = item.flag;
     this.areaCodePopup =false;
+  }
+  onSubmited(){
+    this.chat.startChat(this.binding, this.areacode);
   }
 }

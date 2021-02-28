@@ -1,22 +1,33 @@
-.container_contant{
-  background-image: url(../../assets/images/bottom-image.png);
-  min-height: 890px;
-  margin-top: 162px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media only screen and (min-width: 801px) {
+  .container_contant {
+    background-image: url(../../assets/images/bottom-image.png);
+    min-height: 890px;
+    padding-top: 162px;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text {
+    margin-top: 239px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    color: #00a404;
+  }
 }
-
-.container_btn_google{
+.container_btn_google {
   pointer-events: fill;
   width: 220px;
   margin-top: 2px;
   margin-left: 30px;
 }
 
-.container_btn{
+.container_btn {
   height: 70px;
   width: 280px;
   margin-top: 15px;
@@ -24,18 +35,54 @@
   background-color: black;
 }
 
-.text{
-  margin-top: 239px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 44px;
-    color: #00a404;
-}
 
-.logo{
+
+.logo {
   margin-top: 206px;
   margin-bottom: -11px;
-  width: 1900px;
+  width: 100%;
+}
+.mobile_logo{
+  display: none;
+}
+.container_img{
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .container_contant {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+    .text {
+      position: absolute;
+      top: 7%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 44px;
+      color: #00a404;
+    }
+    .logo{
+      display: none;
+    }
+    .bottom_logo{
+      width: 100%;
+      margin-top: -30px;
+        }
+    .mobile_logo{
+      display: block;
+      width: 100%;
+    }
+    .container_img{
+      display: block;
+      width: 100%;
+    }
 }

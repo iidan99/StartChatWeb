@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { country } from "../../interface/country_interface";
+import { StartchatService } from "../../startchat.service";
 
 @Component({
   selector: 'app-search-field-country',
@@ -9,20 +9,15 @@ import { country } from "../../interface/country_interface";
 })
 export class SearchFieldCountryComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor(private list: StartchatService) { }
   @Output() onSelectAreaCode = new EventEmitter<country>();
-  countryList: country[];
+  countryList: country[] = this.list.countryList;
   arr: country[];
   ngOnInit(): void {
-  this.getCountryList();
+    this.countryList = this.countryList.sort((a,b) => a.dial_code.localeCompare(b.dial_code));;
   }
 
-  getCountryList(){
-    return this.http.get<country[]>("assets/country.json").subscribe(result =>
-      this.countryList = result);
-  }
   onSelect(item: country){
-    this.countryList = this.countryList.sort((a,b) => a.dial_code.localeCompare(b.dial_code));
     console.log(this.countryList);
     this.onSelectAreaCode.emit(item);
   }

@@ -14,7 +14,7 @@
         <app-search-field-country (onSelectAreaCode)="onChangeAreaCode($event)"></app-search-field-country>
       </div>
       </div>
-      <input class="container_phonenumber searchfields" placeholder="phone number" type="number">
-      <button class="container_search_btn">Start a WhatsApp conversation</button>
+      <input class="container_phonenumber searchfields" placeholder="phone number" [(ngModel)]="binding" type="number">
+      <button (click)="onSubmited()" class="container_search_btn">Start a WhatsApp conversation</button>
   </div>
 </div>

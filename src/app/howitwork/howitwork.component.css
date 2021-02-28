@@ -1,3 +1,4 @@
+@media only screen and (min-width: 801px) {
 .container{
   justify-content: center;
   display: flex;
@@ -25,6 +26,13 @@
 }
 
 .number3{
+  margin: 0 0 337px 0;
+}
+.number2{
+  margin: 0 0 337px 0;
+}
+
+.number1{
   margin: 0 0 337px 0;
 }
 
@@ -127,4 +135,115 @@
   color: #00a404;
   font-size: 28px;
   font-weight: 700;
+}
+.mobile_text{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    background-color: #e8e8e8;
+  }
+  .container_header_text{
+    text-align: center;
+    padding: 50px;
+    font-size: 45px;
+    color: #00a404;
+    font-weight: 400;
+  }
+  .phone1{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .number1{
+    position: absolute;
+    width: 56px;
+    top: 30%;
+    left: 5%;
+  }
+  .number2{
+    position: absolute;
+    width: 56px;
+    top: 30%;
+    right: 3%;
+  }
+  .number3{
+    position: absolute;
+    width: 56px;
+    top: 30%;
+    left: 5%;
+  }
+  .phone1_img{
+    width: 30%;
+    margin-left: 90px;
+  }
+  .phone2_img{
+    width: 30%;
+    margin-right: 20%
+    }
+  .phone3_img{
+    width: 30%;
+    margin-left: 90px;
+  }
+  .mobile_text{
+    background-color: #00a304;
+    width: 100%;
+    height: 155px;
+    text-align: center;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main_text{
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .sec_text{
+    font-size: 18px;
+  }
+
+  .container_phone_text{
+    display: none;
+  }
+  .icons{
+    margin-top: 50px;
+    background-color: #ffff;
+    }
+  .dots{
+    display: none;
+  }
+  .icon_img{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .person{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 98%;
+  }
+  .person_img{
+    margin-bottom: 20px;
+  }
+  .group{
+    padding-bottom: 20px;
+  }
+
+  .space3{
+    margin-top: 30px;
+  }
+  .space2{
+    margin-top: 30px;
+  }
+  .phonenumber{
+    font-weight: 700;
+    color: #00a404;
+    font-size: 25px;
+  }
 }
