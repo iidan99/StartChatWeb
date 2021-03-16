@@ -88,8 +88,8 @@
   justify-content: space-evenly;
 }
 
-.phone_1{
-  margin-left: 200px;
+.phone1{
+  position: relative;
 }
 
 .phone_2{

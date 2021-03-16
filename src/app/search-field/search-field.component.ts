@@ -1,4 +1,4 @@
-import { Component, OnInit, NgModule } from '@angular/core';
+import { Component, OnInit, NgModule, ViewChild } from '@angular/core';
 import { country } from '../interface/country_interface';
 import { StartchatService } from '../startchat.service';
 
@@ -13,8 +13,11 @@ export class SearchFieldComponent implements OnInit {
   countryFlag: String = "https://restcountries.eu/data/isr.svg";
   binding:number;
   constructor(private chat: StartchatService) { }
+  @ViewChild('insideElement', { static: false }) insideElement;
 
   ngOnInit(): void {
+    this.onDocumentClick = this.onDocumentClick.bind(this);
+    document.addEventListener('click', this.onDocumentClick);
   }
 
   openPopup(){
@@ -27,5 +30,19 @@ export class SearchFieldComponent implements OnInit {
   }
   onSubmited(){
     this.chat.startChat(this.binding, this.areacode);
+  }
+
+  onclickOutside(){
+    console.log("hello");
+    this.areaCodePopup = false;
+  }
+
+  protected onDocumentClick(event: MouseEvent) {
+    if(this.areaCodePopup){
+      if (this.insideElement.nativeElement.contains(event.target)) {
+        return;
+      }
+      this.areaCodePopup = false;
+    }
   }
 }

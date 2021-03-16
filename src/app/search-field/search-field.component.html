@@ -5,7 +5,7 @@
   </div>
   <div class="container_search">
       <div class="search_areacode">
-        <div class="" (click)="openPopup()">
+        <div class="" #insideElement (click)="openPopup()">
           <i class="flag_icon pointer"><img class="dropdown_icon_img" src="assets/images/dropdown.png" alt=""></i>
           <i class="flag_icon pointer"><img class="flag_icon_img" [src]="countryFlag" alt=""></i>
           <input class="container_areacode searchfields pointer" maxlength="5" [placeholder]="areacode" type="number">
