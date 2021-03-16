@@ -1,15 +1,18 @@
 @media only screen and (min-width: 801px) {
+  .container{
+    display: flex;
+    justify-content: center;
+  }
   .container_contant {
     background-image: url(../../assets/images/bottom-image.png);
     min-height: 890px;
-    padding-top: 162px;
-    background-position:center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+    max-width: 1920px;
+    }
   .text {
     margin-top: 239px;
     display: flex;
