@@ -140,3 +140,9 @@
   transform: scale(1.07);
   color: #ECECEC;
 }
+
+@media only screen and (max-width: 1479px) {
+  .container_header_phone{
+    display: none;
+  }
+}

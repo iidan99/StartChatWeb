@@ -12,6 +12,7 @@ export class SearchFieldComponent implements OnInit {
   areacode: string = "+972";
   countryFlag: String = "https://restcountries.eu/data/isr.svg";
   binding:number;
+  error: boolean;
   constructor(private chat: StartchatService) { }
   @ViewChild('insideElement', { static: false }) insideElement;
 
@@ -29,7 +30,14 @@ export class SearchFieldComponent implements OnInit {
     this.areaCodePopup =false;
   }
   onSubmited(){
-    this.chat.startChat(this.binding, this.areacode);
+    console.log(this.binding);
+    if(this.binding === undefined || this.binding.toString().length < 7){
+    this.error = true;
+    }
+    else{
+      this.chat.startChat(this.binding, this.areacode);
+      this.error =false;
+    }
   }
 
   onclickOutside(){
