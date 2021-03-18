@@ -36,6 +36,7 @@
   margin-top: 15px;
   border-radius: 50px;
   background-color: black;
+  transition:1s;
 }
 
 
@@ -88,4 +89,9 @@
       display: block;
       width: 100%;
     }
+}
+
+.container_btn:hover{
+  transform: scale(1.07);
+  color: #ECECEC;
 }

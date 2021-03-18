@@ -52,6 +52,7 @@
     width: 250px;
     border-radius: 50px;
     background-color: black;
+    transition: 1s;
   }
 
   .container_btn_google {
@@ -102,6 +103,9 @@
     width: 25px;
   }
 
+.container_header_phone{
+  display:none;
+}
   .container_header_phone_img {
     display: none;
   }
@@ -130,4 +134,9 @@
   width: 200px;
   border-radius: 50px;
 }
+}
+
+.container_btn:hover{
+  transform: scale(1.07);
+  color: #ECECEC;
 }
