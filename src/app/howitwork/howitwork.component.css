@@ -3,7 +3,7 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-top: -550px;
+  margin-top: -35rem;
   flex-direction: column;
   background-image: url(../../assets/images/howitworkback.png);
   background-position: center;
@@ -15,7 +15,7 @@
 .container_header_text{
   font-weight: 400;
   color:#00a404;
-  font-size: 45px;
+  font-size: 5rem;
 }
 
 .container_phones{
