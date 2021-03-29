@@ -2,6 +2,7 @@
   "name": "start-chat-web",
   "version": "0.0.0",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "buildup": "ng build --aot --prod --base-href /StartChatWeb/ --outputPath ./dist/ &&  gh-pages -d ./dist",
     "ng": "ng",
     "start": "node server.js",
@@ -29,8 +30,8 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1101.1",
-    "@angular/cli": "~11.1.1",
-    "@angular/compiler-cli": "~11.1.0",
+    "@angular/cli": "^11.2.6",
+    "@angular/compiler-cli": "^11.1.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
