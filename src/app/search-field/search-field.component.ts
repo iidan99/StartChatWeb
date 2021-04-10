@@ -35,6 +35,7 @@ export class SearchFieldComponent implements OnInit {
     this.error = true;
     }
     else{
+
       this.chat.startChat(this.binding, this.areacode);
       this.error =false;
     }
