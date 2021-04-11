@@ -14,8 +14,6 @@
   "dependencies": {
     "typescript": "~4.1.2",
     "@angular/animations": "~11.1.0",
-    "@angular/common": "~11.1.0",
-    "@angular/compiler": "~11.1.0",
     "@angular/core": "~11.1.0",
     "@angular/forms": "~11.1.0",
     "@angular/platform-browser": "~11.1.0",
