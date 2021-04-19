@@ -96,7 +96,7 @@
   color: #ECECEC;
 }
 
-@media only screen and (min-width: 1336px) {
+@media only screen and (min-width: 1336px)  and (max-width: 1600px) {
   .container_contant{
     background-position: center;
   }

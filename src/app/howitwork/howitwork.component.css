@@ -146,9 +146,15 @@
   .mobile_text {
     display: none;
   }
+  .person{
+    max-width: 405px;
+  }
+  .icon_group{
+    max-width: 405px;
+  }
 }
 
-@media only screen and (min-width: 1336px) and (max-width: 1337px) {
+@media only screen and (min-width: 1336px) and (max-width: 1600px) {
   .phone1_img {
     width: 225px;
   }
@@ -174,7 +180,7 @@
   }
 
   .container {
-    width: 1336px;
+    width: auto;
     background-position-y: 372px;
     background-size: contain;
   }
@@ -305,8 +311,11 @@
   .person {
     padding-top: 50px;
     padding-bottom: 20px;
-    width: 98%;
+    max-width: 60%;
   }
+.icon_group{
+  max-width: 60%;
+}
 
   .person_img {
     margin-bottom: 20px;
