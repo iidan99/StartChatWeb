@@ -4,6 +4,7 @@
   "scripts": {
     "buildup": "ng build --aot --prod --base-href /StartChatWeb/ --outputPath ./dist/ &&  gh-pages -d ./dist",
     "ng": "ng",
+    "fire": "firebase deploy --only hosting",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
