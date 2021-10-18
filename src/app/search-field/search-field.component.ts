@@ -31,8 +31,11 @@ export class SearchFieldComponent implements OnInit {
     this.areaCodePopup =false;
   }
   onSubmited(){
+    if(this.binding!== undefined){
     this.binding = this.binding.replace("-", "");
-    if(!this.binding.match(this.regex) || this.binding === undefined || this.binding === null || this.binding.toString().length < 7){
+    }
+    console.log(this.binding)
+    if(this.binding === undefined || this.binding === null || this.binding.toString().length < 7 ||!this.binding.match(this.regex)){
     this.error = true;
     }
     else{
