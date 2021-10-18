@@ -11,8 +11,9 @@ export class SearchFieldComponent implements OnInit {
   areaCodePopup: boolean = false;
   areacode: string = "+972";
   countryFlag: String = "https://restcountries.eu/data/isr.svg";
-  binding:number;
+  binding:string;
   error: boolean;
+  private regex: RegExp = new RegExp(/^[0-9]+(\.[0-9]*){0,1}$/g);
   constructor(private chat: StartchatService) { }
   @ViewChild('insideElement', { static: false }) insideElement;
 
@@ -30,13 +31,12 @@ export class SearchFieldComponent implements OnInit {
     this.areaCodePopup =false;
   }
   onSubmited(){
-    console.log(this.binding);
-    if(this.binding === undefined || this.binding.toString().length < 7){
+    this.binding = this.binding.replace("-", "");
+    if(!this.binding.match(this.regex) || this.binding === undefined || this.binding === null || this.binding.toString().length < 7){
     this.error = true;
     }
     else{
-
-      this.chat.startChat(this.binding, this.areacode);
+      this.chat.startChat(Number(this.binding), this.areacode);
       this.error =false;
     }
   }

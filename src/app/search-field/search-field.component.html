@@ -14,7 +14,10 @@
         <app-search-field-country (onSelectAreaCode)="onChangeAreaCode($event)"></app-search-field-country>
       </div>
       </div>
-      <input class="container_phonenumber searchfields" [ngClass]="{'phone_error': error}"  placeholder="phone number" [(ngModel)]="binding" type="number">
+      <div>
+      <input class="container_phonenumber searchfields" [ngClass]="{'phone_error': error}"  placeholder="phone number" [(ngModel)]="binding" type="text">
+      <p *ngIf="error" class="error">Please enter valid Number</p>
+     </div>
       <button (click)="onSubmited()" class="container_search_btn">Start a WhatsApp conversation</button>
   </div>
 </div>

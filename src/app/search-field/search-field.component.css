@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+.error{
+  color: red;
+  margin-left:15px
+}
 .container {
   background-image: url("../../assets/images/OUTLINE-ORNAMENT.png");
   min-height: 842px;
