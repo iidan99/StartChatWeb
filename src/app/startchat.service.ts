@@ -16,6 +16,8 @@ export class StartchatService {
   }
 
   startChat(phoneNumber: number, areaCode: string){
-     window.open("https://api.whatsapp.com/send?phone="+ areaCode.replace("+", "") + phoneNumber);
+    areaCode = areaCode.replace("+", "");
+    console.log(areaCode);
+     window.open("https://api.whatsapp.com/send?phone="+ areaCode + phoneNumber);
   }
 }
